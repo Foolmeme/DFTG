@@ -30,4 +30,4 @@ This is a MvTec test demo without training:
 ![target](images/output.png) target result
 
 ### Notes
-Recommending image in gray scale.
+Recommended images in grayscale.
