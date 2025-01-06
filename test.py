@@ -5,7 +5,7 @@ import cv2
 from torchvision.utils import save_image
 # from model.fusion import DefectFusion
 
-model_path = '/data0/zhangyangchao1/testProject/DFTG/weights/pibu-big-01/model_1.pth'
+model_path = 'weights/model_1.pth'
 # model_path = 'defect_fusion.pth'
 # sta = torch.load(model_path, map_location='cpu')
 # model = DefectFusion()
@@ -21,9 +21,9 @@ device = torch.device('cuda:1')
 model.to(device)
 
 # Load the image
-image_path = 'images/ok.png'
-defect_path = 'images/1.png'
-defect_mask_path = 'images/1_mask.png'
+image_path = 'images/001.png'
+defect_path = 'images/000.png'
+defect_mask_path = 'images/000_mask.png'
 
 
 image = cv2.imread(image_path)
